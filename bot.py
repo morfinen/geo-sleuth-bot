@@ -69,7 +69,7 @@ async def handle_photo(message: Message):
 
 
 async def run_geo_sleuth(img_path: Path) -> dict:
-    scripts = GEO_SLEUTH_DIR / "scripts"
+    scripts = GEO_SLEUTH_DIR / "skills" / "geo-sleuth" / "scripts"
     out_dir = img_path.parent / "out"
     out_dir.mkdir(exist_ok=True)
 
